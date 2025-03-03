@@ -46,28 +46,15 @@ def gerar_insights(contexto):
 
 if __name__ == '__main__':
     # Exemplo de contexto com insights derivados da análise de dados
-    contexto_exemplo = (
-
-        "Análise de dados do Superstore:\n"
-        "- Quero cagar - será que papel higiênico resolve??\n"
-        "- Faça uma análise dos gráficos já gerados - faça um resumo;\n"
-        "- Avalie a relação entre as vendas e os lucros;\n"
-        "- Identifique padrões e tendências nos dados;\n"
-        """- Há uma correlação positiva entre quantidade de vendas e
-           descontos, mas descontos muito altos reduzem a margem de lucro;\n"""
-        "- Sugira ações para melhorar a lucratividade das vendas;\n"
-        """- Segmentação dos clientes revela que a região Sul possui maior
-             fidelidade ticket médio elevado.\n
-        """
-        """- "\nCom base nesses resultados, quais estratégias você
-               recomendaria para aumentara rentabilidade e otimizar as
-               campanhas promocionais?
-        """
-    )
-
-    insight_gerado = gerar_insights(contexto_exemplo)
-    if insight_gerado:
-        print('Insight gerado pela IA: ')
-        print(insight_gerado)
-    else:
-        print('Falha ao gerar insight!')
+    while True:
+        user_prompt = input(
+            "Digite a sua pergunta a Gemini (ou 'sair' para encerrar): "
+          )
+        if user_prompt.lower() == 'sair':
+            break
+        insight_gerado = gerar_insights(user_prompt)
+        if insight_gerado:
+            print("\nIA respondendo: ")
+            print(insight_gerado)
+        else:
+            print("\nFalha ao gerar insights com a Gemini AI!")
