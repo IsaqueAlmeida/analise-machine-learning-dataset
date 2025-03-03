@@ -168,25 +168,25 @@ def gerar_insight(contexto):
         return None
 
 # Exemplo de uso da função
-if __name__ == "__main__":
-    contexto_exemplo = (
-        "Análise de dados do Superstore:\n"
-        "- As vendas apresentam uma distribuição com picos durante períodos promocionais;\n"
-        "- Há uma correlação positiva entre quantidade de vendas e descontos, mas descontos muito altos reduzem a margem de lucro;\n"
-        "- Segmentação dos clientes revela que a região Sul possui maior fidelidade e ticket médio elevado.\n"
-        "\nCom base nesses resultados, quais estratégias você recomendaria para aumentar a rentabilidade e otimizar as campanhas promocionais?"
-    )
-    
-    insight_gerado = gerar_insight(contexto_exemplo)
-    if insight_gerado:
-        print("Insight gerado pela IA:")
-        print(insight_gerado)
-    else:
-        print("Falha ao gerar insight.")
+if __name__ == '__main__':
+    # Exemplo de contexto com insights derivados da análise de dados
+    while True:
+        user_prompt = input(
+            "Digite a sua pergunta a Gemini (ou 'sair' para encerrar): "
+          )
+        if user_prompt.lower() == 'sair':
+            break
+        insight_gerado = gerar_insights(user_prompt)
+        if insight_gerado:
+            print("\nIA respondendo: ")
+            print(insight_gerado)
+        else:
+            print("\nFalha ao gerar insights com a Gemini AI!")
 ```
 
 > **Explicação:**  
-> Esta seção integra a API do Gemini AI para gerar insights em linguagem natural. A função `gerar_insight` envia um prompt (com um contexto detalhado) para o modelo GEMINI-1.5-PRO e retorna a resposta, tratando possíveis erros na requisição.
+> Esta seção integra a API do Gemini AI para gerar insights em linguagem natural. A função `gerar_insight` envia um prompt (com um contexto detalhado) para o modelo GEMINI-1.5-PRO e retorna a resposta, tratando possíveis erros na requisição. 
+> **`Obs: Retirei as frases adicionadas para a IA gerar insights e adicionei um input para os usuários fazerem perguntas e interagir com a mesma`**
 
 ## Treinamento e Avaliação do Modelo
 
