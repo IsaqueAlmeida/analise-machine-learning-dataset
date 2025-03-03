@@ -231,7 +231,7 @@ Mesmo que nem todos os níveis do teste sejam completados, o importante é garan
 - **Implementações Realizadas:**  
   - Desenvolvimento de uma análise exploratória robusta.
   - Criação de um modelo de machine learning para previsão de vendas.
-  - Integração completa com o GPT-4 para geração de insights em linguagem natural.
+  - Integração completa com o `Gemini AI` para geração de insights em linguagem natural.
   
 - **Pontos Pendentes:**  
   - Experimentação com outros modelos e técnicas de otimização.
