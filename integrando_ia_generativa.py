@@ -8,7 +8,7 @@ import os
 
 # Configurando a chave da API
 genai.configure(api_key=os.getenv('GEMINI_API_KEY',
-                                  'Sua_Chave_Key_Gemini_AI'))
+                                  'Sua_chave_Key_Gemini_AI'))
 
 # Criando a função para gerar insights
 
