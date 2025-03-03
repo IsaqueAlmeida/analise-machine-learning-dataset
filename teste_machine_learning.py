@@ -14,4 +14,10 @@ import pandas as pd
 df = pd.read_csv('sample_superstore.csv', encoding='latin-1')
 
 # Fazendo a visualização das primeiras linnhas do dataset
-print(df.head(10))
+print(df.head())
+
+# Verificando a estrutura dos dados
+print(df.info())
+
+# Aplicando estatística descritivas iniciais
+print(df.describe())
