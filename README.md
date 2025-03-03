@@ -186,7 +186,7 @@ if __name__ == "__main__":
 ```
 
 > **Explicação:**  
-> Esta seção integra a API do OpenAI para gerar insights em linguagem natural. A função `gerar_insight` envia um prompt (com um contexto detalhado) para o modelo GPT-4 e retorna a resposta, tratando possíveis erros na requisição.
+> Esta seção integra a API do Gemini AI para gerar insights em linguagem natural. A função `gerar_insight` envia um prompt (com um contexto detalhado) para o modelo GEMINI-1.5-PRO e retorna a resposta, tratando possíveis erros na requisição.
 
 ## Treinamento e Avaliação do Modelo
 
@@ -203,7 +203,7 @@ if __name__ == "__main__":
 - **Seleção de Features:**  
   - Identificar quais variáveis impactam significativamente as vendas, exigindo experimentação com diferentes combinações.
 - **Integração com a IA:**  
-  - Configuração e ajustes dos parâmetros do GPT-4 (como `temperature` e `max_tokens`) para obter respostas precisas e úteis.
+  - Configuração e ajustes dos parâmetros do GEMINI-1.5-PRO (como `temperature` e `max_tokens`) para obter respostas precisas e úteis.
   - Tratamento de erros na comunicação com a API.
 
 ## Melhorias e Próximos Passos
