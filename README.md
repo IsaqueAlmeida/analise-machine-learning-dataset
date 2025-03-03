@@ -34,7 +34,7 @@ O projeto utiliza o Superstore Dataset para:
 - **Pandas** e **NumPy** para manipulação e análise dos dados.
 - **Matplotlib** e **Seaborn** para criação de visualizações.
 - **Scikit-learn** para desenvolvimento e avaliação de modelos de machine learning.
-- **OpenAI API** para integração com modelos de linguagem (ex.: GPT-4).
+- **OpenAI API** para integração com modelos de linguagem (ex.: GPT-4 ou Gemini AI).
 
 ## Pré-requisitos e Instalação
 
@@ -50,7 +50,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn openai
 
 ### Configuração da API
 
-Para utilizar a integração com a IA generativa, configure sua chave de API do OpenAI. Você pode definir a variável de ambiente `OPENAI_API_KEY` ou inserir diretamente sua chave no código (não recomendado para produção).
+Para utilizar a integração com a IA generativa, configure sua chave de API do Gemini AI. Você pode definir a variável de ambiente `GEMINI_API_KEY` ou inserir diretamente sua chave no código (não recomendado para produção).
 
 ## Explicação do Código
 
