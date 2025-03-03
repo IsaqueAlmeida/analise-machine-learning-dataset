@@ -1,6 +1,6 @@
 # Análise e Machine Learning com o Superstore Dataset
 
-Este projeto tem como objetivo demonstrar habilidades em análise de dados, machine learning e integração com IA generativa utilizando o Superstore Dataset. Através dele, são abordados os seguintes níveis:
+Este projeto tem como objetivo demonstrar habilidades em análise de dados, machine learning e integração com IA generativa utilizando o Superstore Dataset, para um teste técnico da empresa BeTalent para o cargo de Ciência de Dados. Através dele, são abordados os seguintes níveis:
 
 1. **Análise Exploratória (EDA) e Insights**
 2. **Machine Learning Aplicado**
